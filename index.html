@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width">
 <meta http-equiv='cache-control' content='no-cache'> 
 <meta http-equiv='expires' content='0'> 
 <meta http-equiv='pragma' content='no-cache'>
@@ -13,16 +13,23 @@
 </head>
 <body>
     <section class="home-1">
-        <div class="navigation-bar">
+        <header class="header">
+        <div class="container">    
+            <div class="navigation-bar">
                 <a href="index.html"><img class="im" src="image/kinoo.png"></a>
-                <nav>                          
-                <a href="index.html"><button class="link">Главная</button></a>
-                <a href="films.html"><button class="link">Фильмы</button></a>
-                <a href="serial.html"><button class="link">Сериалы</button></a>
-                <a href="registration.html"><button class="link">Регистрация</button></a>
-                </nav>           
-            </header>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">                          
+                <a href="index.html"><div class="link">Главная</div></a>
+                <a href="films.html"><div class="link">Фильмы</div></a>
+                <a href="serial.html"><div class="link">Сериалы</div></a>
+                <a href="registration.html"><div class="link">Регистрация</div></a>
+                </nav>              
             </div>
+        </div>
+        </header>
     </section>
             <section class="info">
                 <div class="blok">
@@ -170,6 +177,7 @@
                     </div>
                     </div>
                 </div>    
-            </section>>   
+            </section>
+            <script src="app.js"></script>   
 </body>
 </html>
